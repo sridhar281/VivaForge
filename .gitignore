@@ -1,0 +1,35 @@
+# --- Secrets ---
+.env
+.env.local
+*.env
+!.env.example
+
+# --- Python / backend ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# --- Storage (uploads, generated artifacts, vector db, models) ---
+backend/storage/
+backend/**/*.mp4
+backend/**/*.mp3
+backend/**/*.wav
+!backend/storage/.gitkeep
+
+# --- Node / frontend ---
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+.idea/
+
+# --- Logs ---
+*.log
